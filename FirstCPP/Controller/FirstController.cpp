@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "FirstController.h"
+#include "../Model/Timer.hpp"
 
 using namespace std;
 
@@ -18,6 +19,9 @@ void FirstController :: usePointerToChange(int * pointedTo)
 
 void FirstController :: start()
 {
+    Timer myTimer;
+    myTimer.startTimer();
+    
     cout << "words here please :D" << endl;
     
     int myNumber = 9;
@@ -34,6 +38,14 @@ void FirstController :: start()
     cout << "Chgangin with a pointer" << endl;
     usePointerToChange(numberPointer);
     cout << "See how the number has been changed: " << myNumber << endl;
+    
+    int derpy;
+    cin >> derpy;
+    
+    cout << derpy << endl;
+    
+    myTimer.finishTimer();
+    myTimer.displayTimerInformation();
 }
 
 void FirstController :: specialOutput()
