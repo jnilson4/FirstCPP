@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F035FD71E3693B300AE2D8A /* AfternoonRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F035FD61E3693B300AE2D8A /* AfternoonRunner.cpp */; };
 		7F035FD91E36958B00AE2D8A /* FirstController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F035FD81E36958B00AE2D8A /* FirstController.cpp */; };
+		7F1221F11E411FC600BDA089 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7F1221EF1E411FC600BDA089 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		7F035FD61E3693B300AE2D8A /* AfternoonRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AfternoonRunner.cpp; path = Controller/AfternoonRunner.cpp; sourceTree = "<group>"; };
 		7F035FD81E36958B00AE2D8A /* FirstController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FirstController.cpp; path = Controller/FirstController.cpp; sourceTree = "<group>"; };
 		7F035FDA1E36987600AE2D8A /* FirstController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirstController.h; path = Controller/FirstController.h; sourceTree = "<group>"; };
+		7F1221EF1E411FC600BDA089 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Model/Timer.cpp; sourceTree = "<group>"; };
+		7F1221F01E411FC600BDA089 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Model/Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +63,29 @@
 		7F035FC91E368FA500AE2D8A /* FirstCPP */ = {
 			isa = PBXGroup;
 			children = (
+				7F1221EE1E411F5900BDA089 /* Model */,
+				7F1221ED1E411F2600BDA089 /* Controller */,
+			);
+			path = FirstCPP;
+			sourceTree = "<group>";
+		};
+		7F1221ED1E411F2600BDA089 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				7F035FD61E3693B300AE2D8A /* AfternoonRunner.cpp */,
 				7F035FD81E36958B00AE2D8A /* FirstController.cpp */,
 				7F035FDA1E36987600AE2D8A /* FirstController.h */,
 			);
-			path = FirstCPP;
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7F1221EE1E411F5900BDA089 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F1221EF1E411FC600BDA089 /* Timer.cpp */,
+				7F1221F01E411FC600BDA089 /* Timer.hpp */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1221F11E411FC600BDA089 /* Timer.cpp in Sources */,
 				7F035FD91E36958B00AE2D8A /* FirstController.cpp in Sources */,
 				7F035FD71E3693B300AE2D8A /* AfternoonRunner.cpp in Sources */,
 			);
@@ -252,6 +274,7 @@
 				7F035FD01E368FA500AE2D8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
