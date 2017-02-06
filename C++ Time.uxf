@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>210</y>
+      <w>370</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Timer.h
+--
+
+--
+- clock_t executionTime;
++ void startTimer();
++ void stopTimer()
++ void resetTimer();
++ void displayTimerInformation();
++ long getExecutionTimeInMicroseconds();
+bg=GREEN</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
