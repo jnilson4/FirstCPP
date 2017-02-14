@@ -35,7 +35,7 @@ void FirstController :: start()
     myNumber = impactNumber();
     cout << "See - impacted " << myNumber << endl;
     
-    cout << "Chgangin with a pointer" << endl;
+    cout << "Chganging with a pointer" << endl;
     usePointerToChange(numberPointer);
     cout << "See how the number has been changed: " << myNumber << endl;
     
